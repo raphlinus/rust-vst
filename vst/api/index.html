@@ -1,0 +1,256 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="rustdoc"><meta name="description" content="API documentation for the Rust `api` mod in crate `vst`."><meta name="keywords" content="rust, rustlang, rust-lang, api"><title>vst::api - Rust</title><link rel="stylesheet" type="text/css" href="../../normalize.css"><link rel="stylesheet" type="text/css" href="../../rustdoc.css" id="mainThemeStyle"><link rel="stylesheet" type="text/css" href="../../dark.css"><link rel="stylesheet" type="text/css" href="../../light.css" id="themeStyle"><script src="../../storage.js"></script></head><body class="rustdoc mod"><!--[if lte IE 8]><div class="warning">This old browser is unsupported and will most likely display funky things.</div><![endif]--><nav class="sidebar"><div class="sidebar-menu">&#9776;</div><p class='location'>Module api</p><div class="sidebar-elems"><div class="block items"><ul><li><a href="#modules">Modules</a></li><li><a href="#structs">Structs</a></li><li><a href="#enums">Enums</a></li><li><a href="#types">Type Definitions</a></li></ul></div><p class='location'><a href='../index.html'>vst</a></p><script>window.sidebarCurrent = {name: 'api', ty: 'mod', relpath: '../'};</script><script defer src="../sidebar-items.js"></script></div></nav><div class="theme-picker"><button id="theme-picker" aria-label="Pick another theme!"><img src="../../brush.svg" width="18" alt="Pick another theme!"></button><div id="theme-choices"></div></div><script src="../../theme.js"></script><nav class="sub"><form class="search-form js-only"><div class="search-container"><input class="search-input" name="search" autocomplete="off" placeholder="Click or press ‘S’ to search, ‘?’ for more options…" type="search"><a id="settings-menu" href="../../settings.html"><img src="../../wheel.svg" width="18" alt="Change settings"></a></div></form></nav><section id="main" class="content"><h1 class='fqn'><span class='in-band'>Module <a href='../index.html'>vst</a>::<wbr><a class="mod" href=''>api</a></span><span class='out-of-band'><span id='render-detail'><a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">[<span class='inner'>&#x2212;</span>]</a></span><a class='srclink' href='../../src/vst/api.rs.html#1-838' title='goto source code'>[src]</a></span></h1><div class='docblock'><p>Structures and types for interfacing with the VST 2.4 API.</p>
+</div><h2 id='modules' class='section-header'><a href="#modules">Modules</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="consts/index.html"
+                                  title='mod vst::api::consts'>consts</a></td>
+                           <td class='docblock-short'>
+                                <p>Constant values</p>
+
+                           </td>
+                       </tr></table><h2 id='structs' class='section-header'><a href="#structs">Structs</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.AEffect.html"
+                                  title='struct vst::api::AEffect'>AEffect</a></td>
+                           <td class='docblock-short'>
+                                <p>Used with the VST API to pass around plugin information.</p>
+
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.ChannelFlags.html"
+                                  title='struct vst::api::ChannelFlags'>ChannelFlags</a></td>
+                           <td class='docblock-short'>
+                                <p>Flags for VST channels.</p>
+
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.ChannelProperties.html"
+                                  title='struct vst::api::ChannelProperties'>ChannelProperties</a></td>
+                           <td class='docblock-short'>
+                                <p>Information about a channel. Only some hosts use this information.</p>
+
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Event.html"
+                                  title='struct vst::api::Event'>Event</a></td>
+                           <td class='docblock-short'>
+                                <p>A VST event intended to be casted to a corresponding type.</p>
+
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.EventIterator.html"
+                                  title='struct vst::api::EventIterator'>EventIterator</a></td>
+                           <td class='docblock-short'>
+                                <p>An iterator over events, returned by <code>api::Events::events</code></p>
+
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Events.html"
+                                  title='struct vst::api::Events'>Events</a></td>
+                           <td class='docblock-short'>
+                                <p>A struct which contains events.</p>
+
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.FileSelect.html"
+                                  title='struct vst::api::FileSelect'>FileSelect</a></td>
+                           <td class='docblock-short'>
+                                <p>File selector descriptor used in <code>host::OpCode::OpenFileSelector</code>.</p>
+
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.FileType.html"
+                                  title='struct vst::api::FileType'>FileType</a></td>
+                           <td class='docblock-short'>
+                                <p>File type descriptor.</p>
+
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.MidiEvent.html"
+                                  title='struct vst::api::MidiEvent'>MidiEvent</a></td>
+                           <td class='docblock-short'>
+                                <p>A midi event.</p>
+
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.MidiEventFlags.html"
+                                  title='struct vst::api::MidiEventFlags'>MidiEventFlags</a></td>
+                           <td class='docblock-short'>
+                                <p>MIDI event flags.</p>
+
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.ModifierKey.html"
+                                  title='struct vst::api::ModifierKey'>ModifierKey</a></td>
+                           <td class='docblock-short'>
+                                <p>Cross platform modifier key flags.</p>
+
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.PluginFlags.html"
+                                  title='struct vst::api::PluginFlags'>PluginFlags</a></td>
+                           <td class='docblock-short'>
+                                <p>Flags for VST plugins.</p>
+
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.SysExEvent.html"
+                                  title='struct vst::api::SysExEvent'>SysExEvent</a></td>
+                           <td class='docblock-short'>
+                                <p>A midi system exclusive event.</p>
+
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.TimeInfo.html"
+                                  title='struct vst::api::TimeInfo'>TimeInfo</a></td>
+                           <td class='docblock-short'>
+                                <p>Describes the time at the start of the block currently being processed</p>
+
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.TimeInfoFlags.html"
+                                  title='struct vst::api::TimeInfoFlags'>TimeInfoFlags</a></td>
+                           <td class='docblock-short'>
+                                <p>Used in the <code>flags</code> field of <code>TimeInfo</code>, and for querying the host for specific values</p>
+
+                           </td>
+                       </tr></table><h2 id='enums' class='section-header'><a href="#enums">Enums</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class="enum" href="enum.EventType.html"
+                                  title='enum vst::api::EventType'>EventType</a></td>
+                           <td class='docblock-short'>
+                                <p>The type of event that has occured. See <code>api::Event.event_type</code>.</p>
+
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="enum" href="enum.FileSelectCommand.html"
+                                  title='enum vst::api::FileSelectCommand'>FileSelectCommand</a></td>
+                           <td class='docblock-short'>
+                                <p>The file operation to perform.</p>
+
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="enum" href="enum.FileSelectType.html"
+                                  title='enum vst::api::FileSelectType'>FileSelectType</a></td>
+                           <td class='docblock-short'>
+                                <p>Format to select files.</p>
+
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="enum" href="enum.HostLanguage.html"
+                                  title='enum vst::api::HostLanguage'>HostLanguage</a></td>
+                           <td class='docblock-short'>
+                                <p>Language that the host is using.</p>
+
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="enum" href="enum.ProcessLevel.html"
+                                  title='enum vst::api::ProcessLevel'>ProcessLevel</a></td>
+                           <td class='docblock-short'>
+                                <p>Denotes in which thread the host is in.</p>
+
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="enum" href="enum.SmpteFrameRate.html"
+                                  title='enum vst::api::SmpteFrameRate'>SmpteFrameRate</a></td>
+                           <td class='docblock-short'>
+                                <p>SMPTE Frame Rates.</p>
+
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="enum" href="enum.SpeakerArrangementType.html"
+                                  title='enum vst::api::SpeakerArrangementType'>SpeakerArrangementType</a></td>
+                           <td class='docblock-short'>
+                                <p>Tells the host how the channels are intended to be used in the plugin. Only useful for some
+hosts.</p>
+
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="enum" href="enum.Supported.html"
+                                  title='enum vst::api::Supported'>Supported</a></td>
+                           <td class='docblock-short'>
+                                <p>Used to specify whether functionality is supported.</p>
+
+                           </td>
+                       </tr></table><h2 id='types' class='section-header'><a href="#types">Type Definitions</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.DispatcherProc.html"
+                                  title='type vst::api::DispatcherProc'>DispatcherProc</a></td>
+                           <td class='docblock-short'>
+                                <p>Dispatcher function used to process opcodes. Called by host.</p>
+
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.GetParameterProc.html"
+                                  title='type vst::api::GetParameterProc'>GetParameterProc</a></td>
+                           <td class='docblock-short'>
+                                <p>Callback function used to get parameter values. Called by host.</p>
+
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.HostCallbackProc.html"
+                                  title='type vst::api::HostCallbackProc'>HostCallbackProc</a></td>
+                           <td class='docblock-short'>
+                                <p>Host callback function passed to plugin.
+Can be used to query host information from plugin side.</p>
+
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.PluginMain.html"
+                                  title='type vst::api::PluginMain'>PluginMain</a></td>
+                           <td class='docblock-short'>
+                                <p><code>VSTPluginMain</code> function signature.</p>
+
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.ProcessProc.html"
+                                  title='type vst::api::ProcessProc'>ProcessProc</a></td>
+                           <td class='docblock-short'>
+                                <p>Process function used to process 32 bit floating point samples. Called by host.</p>
+
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.ProcessProcF64.html"
+                                  title='type vst::api::ProcessProcF64'>ProcessProcF64</a></td>
+                           <td class='docblock-short'>
+                                <p>Process function used to process 64 bit floating point samples. Called by host.</p>
+
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.SetParameterProc.html"
+                                  title='type vst::api::SetParameterProc'>SetParameterProc</a></td>
+                           <td class='docblock-short'>
+                                <p>Callback function used to set parameter values. Called by host.</p>
+
+                           </td>
+                       </tr></table></section><section id="search" class="content hidden"></section><section class="footer"></section><aside id="help" class="hidden"><div><h1 class="hidden">Help</h1><div class="shortcuts"><h2>Keyboard Shortcuts</h2><dl><dt><kbd>?</kbd></dt><dd>Show this help dialog</dd><dt><kbd>S</kbd></dt><dd>Focus the search field</dd><dt><kbd>↑</kbd></dt><dd>Move up in search results</dd><dt><kbd>↓</kbd></dt><dd>Move down in search results</dd><dt><kbd>↹</kbd></dt><dd>Switch tab</dd><dt><kbd>&#9166;</kbd></dt><dd>Go to active search result</dd><dt><kbd>+</kbd></dt><dd>Expand all sections</dd><dt><kbd>-</kbd></dt><dd>Collapse all sections</dd></dl></div><div class="infos"><h2>Search Tricks</h2><p>Prefix searches with a type followed by a colon (e.g. <code>fn:</code>) to restrict the search to a given type.</p><p>Accepted types are: <code>fn</code>, <code>mod</code>, <code>struct</code>, <code>enum</code>, <code>trait</code>, <code>type</code>, <code>macro</code>, and <code>const</code>.</p><p>Search functions by type signature (e.g. <code>vec -> usize</code> or <code>* -> vec</code>)</p><p>Search multiple things at once by splitting your query with comma (e.g. <code>str,u8</code> or <code>String,struct:Vec,test</code>)</p></div></div></aside><script>window.rootPath = "../../";window.currentCrate = "vst";</script><script src="../../aliases.js"></script><script src="../../main.js"></script><script defer src="../../search-index.js"></script></body></html>
